@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Consultation Forms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Cadastrar Turma</h2>
+        <form id="turmaForm">
+            <div class="form-group">
+                <label for="nomeTurma">Nome da Turma</label>
+                <input type="text" class="form-control" id="nomeTurma" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar Turma</button>
+        </form>
+        <div id="turmaResults" class="mt-5"></div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Cadastrar Objetos</h2>
+        <form id="objetosForm">
+            <div class="form-group">
+                <label for="nomeObjeto">Nome do Objeto</label>
+                <input type="text" class="form-control" id="nomeObjeto" required>
+            </div>
+            <div class="form-group">
+                <label for="tipoObjeto">Tipo do Objeto</label>
+                <input type="text" class="form-control" id="tipoObjeto" required>
+            </div>
+            <div class="form-group">
+                <label for="quantidadeObjeto">Quantidade</label>
+                <input type="number" class="form-control" id="quantidadeObjeto" required>
+            </div>
+            <div class="form-group">
+                <label for="turmaId">ID da Turma</label>
+                <input type="number" class="form-control" id="turmaId" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar Objetos</button>
+        </form>
+        <div id="objetosResults" class="mt-5"></div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Consultar Turma</h2>
+        <form id="consultaTurmaForm">
+            <div class="form-group">
+                <label for="consultaTurmaId">ID da Turma</label>
+                <input type="number" class="form-control" id="consultaTurmaId" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Consultar Turma</button>
+        </form>
+        <div id="consultaTurmaResults" class="mt-5"></div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Consultar Objetos</h2>
+        <button id="consultarObjetosBtn" class="btn btn-primary">Consultar Todos os Objetos</button>
+        <div id="consultaObjetosResults" class="mt-5"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
